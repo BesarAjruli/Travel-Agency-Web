@@ -78,7 +78,8 @@ nav a:hover::after {
 .artworkContainer .artworkTextContainer {
   position: absolute;
   top: 25%;
-  left: 34%;
+  left: 38%;
+  z-index: 99;
 }
 
 .artworkContainer div img {
