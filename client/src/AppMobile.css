@@ -1,0 +1,153 @@
+@media only screen and (max-width: 600px) {
+  header{
+    height: 120px;
+  }
+  header div{
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    left: 10px;
+  }
+  .translateIcon{
+    position: absolute;
+    right: 50px;
+  }
+  nav{
+    display: none;
+  }
+  .artworkCity{
+    width: auto;
+    height: 100%;
+  }
+  .artworkContainer{
+    height: 100vh;
+  }
+  .artworkContainer {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -5px;
+}
+
+.artworkContainer .artworkTextContainer {
+  position: absolute;
+  top: 35%;
+  left: 16%;
+  z-index: 99;
+}
+
+.artworkContainer div img {
+  width: 80%;
+  height: auto;
+}
+
+.activitiesNav{
+    width: 90%;
+    left: 5%;
+    height: 70px;
+}
+
+.activitiesNav div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 20px;
+  font-weight: 700;
+}
+
+.activitiesNav div span{
+    display: none;
+}
+
+.calculator {
+  height: fit-content;
+  padding: 50px 0;
+}
+
+.calculator form {
+  flex-direction: column;
+}
+
+.calculator form select {
+  width: 250px;
+}
+
+.calculator form #adults,
+.calculator form #children {
+  width: 250px;
+}
+
+.calculator form button {
+  width: 170px;
+  height: 55px;
+  font-size: 16px;
+}
+
+.cityOffers {
+  flex-direction: column;
+}
+
+.packages .pckTextContainer {
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  z-index: 9; 
+}
+
+.packages div .rating{
+  height: fit-content;
+}
+.packages div .rating svg{
+  font-size: 25px;
+}
+.packages div h2{
+  font-size: 30px;
+  text-align: center;
+}
+.packages div p{
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 3;
+   -webkit-box-orient: vertical;
+  line-height: 25px;
+}
+.right{
+  right: 50px;
+  top: 90%;
+}
+.left{
+  left: 50px;
+  top:90%;
+}
+
+.othrOffrsCont{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.othrOffrsContainer{
+  flex-direction: column;
+  gap: 20px;
+  width: auto;
+}
+
+footer{
+  grid-template-columns: repeat(1, 1fr);
+  padding: 10px 50px 50px 50px;
+}
+
+footer img{
+  margin-left: 50px;
+  width: 200px;
+}
+
+.contacts{
+    margin-top: 50px;
+}
+}

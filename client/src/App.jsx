@@ -1,4 +1,5 @@
 import './App.css'
+import './AppMobile.css'
 import Icon from '@mdi/react';
 import { mdiTranslate, mdiSafetyGoggles, mdiBed, mdiIsland, mdiArrowRightDropCircleOutline, mdiEmail,
    mdiArrowLeftDropCircleOutline, mdiRun, mdiClockOutline, mdiSailBoat, mdiSwim, mdiPhone, mdiMapMarker } from '@mdi/js';
@@ -39,7 +40,7 @@ const App = () => {
           <a href="">Offers</a>
           <a href="">Contact</a>
         </nav>
-        <Icon path={mdiTranslate} size={1.3}></Icon>
+        <Icon path={mdiTranslate} className='translateIcon' size={1.3}></Icon>
       </header>
       <main>
 
@@ -54,17 +55,17 @@ const App = () => {
         <div className='activitiesNav'>
           <div className='selectedActvitiy' id='act1' onClick={(e) => clickedAct(e)}>
             <Icon path={mdiIsland} size={1.5} />
-            TRIPS
+            <span>TRIPS</span>
           </div>
 
           <div id='act2' onClick={(e) => clickedAct(e)}>
             <Icon path={mdiBed} size={1} />
-            HOTELS
+            <span>HOTELS</span>
           </div>
 
           <div id='act3' onClick={(e) => clickedAct(e)}>
             <Icon path={mdiSafetyGoggles} size={1} />
-            ACTIVITIES
+            <span>ACTIVITIES</span>
           </div>
         </div>
 
