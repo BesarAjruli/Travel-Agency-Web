@@ -1,0 +1,461 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  background-image: linear-gradient(to right, rgba(255, 126, 95, 0.7), rgba(102, 16, 242, 0.7));
+  height: 170px;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  place-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 999;
+}
+
+header div {
+  height: 200px;
+  width: 200px;
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  margin: 0 20%;
+}
+
+nav a {
+  margin: 0 15px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 3px;
+  /* Thickness of the bottom border */
+  width: 100%;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.artworkCity {
+  width: 115%;
+  height: auto;
+  filter: brightness(0.5);
+}
+
+.artworkContainer {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -5px;
+}
+
+.artworkContainer .artworkTextContainer {
+  position: absolute;
+  top: 25%;
+  left: 34%;
+}
+
+.artworkContainer div img {
+  width: 40%;
+  height: auto;
+}
+
+.artworkFilterPurple {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(102, 16, 242, 0.25);
+  z-index: 1
+}
+
+.activitiesNav {
+  width: 60%;
+  height: 80px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 21%;
+  z-index: 5;
+  border-radius: 50px 50px 0 0;
+  color: #fff;
+  display: grid;
+  justify-content: center;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  color: rgb(250, 158, 27);
+  cursor: pointer;
+}
+
+.activitiesNav div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 20px;
+  font-weight: 700;
+}
+
+.selectedActvitiy {
+  background-color: rgb(250, 158, 27);
+  color: #fff;
+}
+
+.calculator {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  background-image: linear-gradient(to right, #ff7e5f, rgb(102, 16, 242));
+}
+
+.calculator form {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  gap: 30px;
+}
+
+.calculator form select {
+  width: 200px;
+  background-color: #fff;
+  height: 40px;
+  border: 0;
+  margin-top: 10px;
+}
+
+.calculator form #adults,
+.calculator form #children {
+  width: 100px;
+}
+
+.calculator form button {
+  width: 150px;
+  height: 45px;
+  border-radius: 15px;
+  border: 0;
+  background-image: linear-gradient(to left, #ff7e5f, rgb(133, 83, 214));
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.1s ease;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.calculator form button:hover {
+  transform: scale(1.05);
+}
+
+/* From Uiverse.io by amikambs */
+.rating {
+  display: block;
+  width: auto;
+  margin-top: 20px;
+}
+
+.rating:not(:checked)>input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked)>label {
+  font-size: 30px;
+  fill: #e5b209;
+}
+
+.bestOffers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.textOffers h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 40px;
+  color: #292929;
+}
+
+.textOffers p {
+  margin-bottom: 50px;
+  font-size: 22px;
+  color: #7c7c7c;
+}
+
+.cityOffers {
+  display: flex;
+  gap: 100px;
+}
+
+.cityOffers div {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.cityOffers div img {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  filter: brightness(0.55);
+  opacity: 0.9;
+}
+
+.cityOffers div div {
+  width: 100%;
+  height: fit-content;
+}
+
+.offerDate {
+  background-color: #e58e09;
+  padding: 5px 20px;
+  border: 0;
+  border-radius: 15px;
+  font-size: 13px;
+}
+
+.cityOffers div div h1 {
+  font-weight: 900;
+  font-size: 65px;
+}
+
+.offerPrice {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.packages{
+  width: 100%;
+  height: 500px;
+  margin: 70px 0;
+  background-image: url(https://albaniannight.com/wp-content/uploads/2025/02/Golem-Beach-scaled.jpeg);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  position: relative;
+}
+.packages .pckTextContainer {
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  z-index: 9; 
+}
+
+.packages div .rating{
+  height: fit-content;
+}
+.packages div .rating svg{
+  font-size: 25px;
+}
+.packages div h2{
+  font-size: 30px;
+  color:#292929;
+  text-transform: uppercase;
+}
+.packages div p{
+  width: 70%;
+  text-align: center;
+  line-height: 30px;
+  color: #7c7c7c;
+}
+
+.packages div button {
+  width: 150px;
+  height: 45px;
+  border-radius: 15px;
+  border: 0;
+  background-image: linear-gradient(to left, #ff7e5f, rgb(133, 83, 214));
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.1s ease;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.packages div button:hover {
+  transform: scale(1.05);
+}
+
+.packages .icons{
+  color: #fff;
+  position: absolute;
+  z-index: 9;
+  cursor: pointer;
+}
+.right{
+  right: 50px;
+  top: 48%;
+}
+.left{
+  left: 50px;
+  top:48%;
+}
+
+.otherOffers{
+  text-align: center;
+  margin: 100px 0;
+  display: grid;
+  padding: 0 50px;
+}
+.otherOffers h1{
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 40px;
+  color: #292929;  
+  margin-bottom: 50px;
+}
+
+.othrOffrsCont{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-content: center;
+  place-items: center;
+}
+
+.othrOffrsContainer{
+  display: flex;
+  gap: 20px;
+  width: 620px;
+}
+
+.otherOffrsImgCont{
+  width: 300px;
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+}
+
+.otherOffrsImgCont img {
+  width: auto;
+  height: 100%;
+}
+
+.otherOffrsImgCont span{
+position: absolute;
+background-color: rgb(250, 158, 27);
+color: #fff;
+padding: 5px 15px;
+top: 65%;
+left: 0;
+font-weight: 900;
+text-transform: uppercase;
+}
+
+.otherOffrsTextCont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: start;
+  width: 250px;
+  text-align: left;
+  color: #7c7c7c;
+}
+
+.otherOffrsTextCont>div>.price{
+  font-size: 40px;
+  font-weight: 900;
+  color: rgb(250, 158, 27);
+  margin-right: 10px;
+}
+
+.otherOffrsTextCont>div>span{
+  color:  #7c7c7c;
+}
+
+.otherOffrsTextCont .rating  svg{
+  font-size: 22px;
+}
+
+.otherOffrsIcons{
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+footer{
+  background-image: linear-gradient(to right, #ff7e5f, rgb(102, 16, 242));
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+footer img{
+  margin-left: 70px;
+  width: 200px;
+}
+
+.tags{
+  color: #fff;
+}
+
+.tags span{
+  width: auto;
+  padding: 5px 10px;
+  border: 1px solid rgb(250, 158, 27);
+  margin: 10px;
+}
+
+.contacts{
+  color: #fff;
+}
+.contacts>div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contacts div div{
+  display: flex;
+  place-items: center;
+  gap: 20px;
+}
